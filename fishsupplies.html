@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 14px 16px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: lightsteelblue;
+  background: lightcyan;
+  border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-size: 18px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: lightcyan;
+}
+
+li a.active {
+    color: white;
+    background-color: lightsteelblue;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding-bottom: 130px;
+}
+
+h1 {
+	font-size: 40px;
+	border-style: dotted;
+	border-width: 5px;
+	border-color: cadetblue;
+	background: palegoldenrod;
+	border-radius: 25px;
+}
+
+.container {
+  position: relative;
+  width: 25%;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: cadetblue;
+  overflow: hidden;
+  width: 300px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li><a href="index.html"> Home </a></li>
+  <li><a href="about_us.html"> About Us </a></li>
+  <li><a href="employees.html"> Our Team </a></li>
+  <li><a href="dogsupplies.html"> Dog Supplies </a></li>
+  <li><a href="catsupplies.html"> Cat Supplies </a></li>
+  <li><a class="active" href="fishsupplies.html"> Fish Supplies </a></li>
+  <li><a href="policies.html"> Policies </a></li>
+  <li><a href="contact_us.html"> Contact Us </a></li>
+</ul>
+
+<h1><center>Fish Supplies</center></h1>
+<p><h2>Fish Tanks</h2></p>
+
+<div class="container">
+  <img src="fishtank1.png" alt="Glass" class="image">
+  <div class="overlay">
+    <div class="text">Glass Aquarium
+		<p><center>2.5 gal: $14.99</center></p>
+		<p><center>10 gal: $14.99</center></p>
+		<p><center>20 gal: $32.99</center></p>
+		<p><center>40 gal: $89.99</center></p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="fishtank2.png" alt="LED" class="image">
+  <div class="overlay">
+    <div class="text">LED Aquarium Kit
+		<p><center>10 gal: $84.99</center></p>
+   </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="fishtank3.png" alt="Gallon" class="image">
+  <div class="overlay">
+    <div class="text">125 Gallon Aquarium Ensemble
+		<p><center>$499.99</center></p>
+   </div>
+  </div>
+</div>
+
+<p><h2>Fish Food</h2></p>
+
+<div class="container">
+  <img src="fishfood1.png" alt="RawNibs" class="image">
+  <div class="overlay">
+    <div class="text"><center>RawNibs
+		<p><center>Salmon & Cod</center></p>		
+		<p><center>10 oz: $21.99</center></p>
+    </center></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="fishfood2.png" alt="TetraPond" class="image">
+  <div class="overlay">
+    <div class="text"><center>TetraPond
+		<p><center>For Small Goldfish & KOI</center></p>
+		<p><center>$7.99</center></p>
+    </center></div>
+  </div>
+</div>
+
+<footer>
+<a href="http://facebook.com"><img id="footer-image" src="facebook.png" width="50px" height="50px";></a>
+<a href="http://twitter.com"><img id="footer-image" src="twitter.png" width="50px" height="50px"></a>
+<a href="http://pinterest.com"><img id="footer-image" src="pinterest.png" width="50px" height="50px"></a>
+<a href="http://youtube.com"><img id="footer-image" src="youtube.png" width="50px" height="50px"></a>
+<br>By Cenrara Widi
+</footer>
+
+
+</body>
+</html>

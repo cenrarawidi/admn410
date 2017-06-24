@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+footer {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 14px 16px;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: lightsteelblue;
+  background: lightcyan;
+  border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-size: 18px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: lightcyan;
+}
+
+li a.active {
+    color: white;
+    background-color: lightsteelblue;
+}
+
+
+h1 {
+	font-size: 40px;
+	border-style: dotted;
+	border-width: 5px;
+	border-color: cadetblue;
+	background: palegoldenrod;
+	border-radius: 25px;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div.column {
+  float: left;
+  width: 24%;
+  margin-bottom: 150px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+div.container {
+  padding: 0 16px;
+}
+
+div.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.title {
+  color: grey;
+}
+
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li><a href="index.html"> Home </a></li>
+  <li><a href="about_us.html"> About Us </a></li>
+  <li><a class="active" href="employees.html"> Our Team </a></li>
+  <li><a href="dogsupplies.html"> Dog Supplies </a></li>
+  <li><a href="catsupplies.html"> Cat Supplies </a></li>
+  <li><a href="fishsupplies.html"> Fish Supplies </a></li>
+  <li><a href="policies.html"> Policies </a></li>
+  <li><a href="contact_us.html"> Contact Us </a></li>
+</ul>
+
+<h1><center>Meet The Team</center></h1>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="chastings.jpg" alt="Connor" style="width:100%">
+      <div class="container">
+        <h2>Connor Hastings</h2>
+        <p class="title">President</p>
+        <p>Durham House of Pets is my second family.</p>
+        <p><a href="mailto:chastings@dhop.com">chastings@dhop.com</a></p>
+        <p>(603) 897-3271</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="jsmith.jpg" alt="Jean" style="width:100%">
+      <div class="container">
+        <h2>Jean Smith</h2>
+        <p class="title">Vice President</p>
+        <p>It is always fun to work with pets.</p>
+        <p><a href="mailto:jsmith@dhop.com">jsmith@dhop.com</a></p>
+        <p>(603) 712-5043</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="cstewart.jpg" alt="Chris" style="width:100%">
+      <div class="container">
+        <h2>Chris Stewart</h2>
+        <p class="title">Financial Controller</p>
+        <p>I have loved pets since I owned my first dog.</p>
+        <p><a href="mailto:cstewart@dhop.com">cstewart@dhop.com</a></p>
+        <p>(603) 828-3257</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+      <img src="mwinchester.jpg" alt="Mary" style="width:100%">
+      <div class="container">
+        <h2>Mary Winchester</h2>
+        <p class="title">Business Development Manager</p>
+        <p>I will do my best to assit my customers.</p>
+        <p><a href="mailto:mwinchester@dhop.com">mwinchester@dhop.com</a></p>
+        <p>(603) 916-2381</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+      <img src="mbones.jpg" alt="Michael" style="width:100%">
+      <div class="container">
+        <h2>Michael Bones</h2>
+        <p class="title">Product Manager</p>
+        <p>Pets can always cheer up bad mood.</p>
+        <p><a href="mailto:mbones@dhop.com">mbones@dhop.com</a></p>
+        <p>(603) 572-4732</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="card">
+      <img src="dcurry.jpg" alt="David" style="width:100%">
+      <div class="container">
+        <h2>David Curry</h2>
+        <p class="title">Software Developer</p>
+        <p>Who wouldn't want to take care of puppies?</p>
+        <p><a href="mailto:dcurry@dhop.com">dcurry@dhop.com</a></p>
+        <p>(603) 282-6554</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+<a href="http://facebook.com"><img id="footer-image" src="facebook.png" width="50px" height="50px";></a>
+<a href="http://twitter.com"><img id="footer-image" src="twitter.png" width="50px" height="50px"></a>
+<a href="http://pinterest.com"><img id="footer-image" src="pinterest.png" width="50px" height="50px"></a>
+<a href="http://youtube.com"><img id="footer-image" src="youtube.png" width="50px" height="50px"></a>
+<br>By Cenrara Widi
+</footer>
+
+</body>
+</html>
